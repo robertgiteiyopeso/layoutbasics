@@ -17,5 +17,14 @@ class ToastActiviy : AppCompatActivity(){
         binding.btnShowToast.setOnClickListener {
             Toast.makeText(this, "Hi I'm a toast :>", Toast.LENGTH_LONG).show()
         }
+
+        binding.btnCustomToast.setOnClickListener {
+//            Toast(this).apply {
+//                duration = Toast.LENGTH_LONG
+//                setView(R.layout.custom_toast)
+//                show()
+//            }
+            Toast.makeText(this, "I tried da cica e deprecated", Toast.LENGTH_LONG).show()
+        }
     }
 }
