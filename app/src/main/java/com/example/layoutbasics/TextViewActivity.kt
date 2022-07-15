@@ -12,6 +12,18 @@ class TextViewActivity : AppCompatActivity(){
         super.onCreate(savedInstanceState)
         binding = ActivityTextViewBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        var count = 0
+
+        binding.btnUp.setOnClickListener {
+            count++
+            binding.tvCount.setText("hai sa numaram: $count")
+        }
+
+        binding.btnDown.setOnClickListener {
+            count--
+            binding.tvCount.setText("hai sa numaram: $count")
+        }
     }
 
 }
