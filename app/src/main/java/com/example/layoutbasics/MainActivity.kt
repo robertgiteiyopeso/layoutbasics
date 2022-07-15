@@ -38,5 +38,10 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        binding.btnCheck.setOnClickListener {
+            val intent = Intent(this, CheckBoxActivity::class.java)
+            startActivity(intent)
+        }
+
     }
 }
