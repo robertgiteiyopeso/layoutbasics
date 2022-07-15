@@ -14,6 +14,18 @@ class CheckBoxActivity : AppCompatActivity(){
         binding = ActivityCheckboxBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        binding.btnOrder.setOnClickListener {
+            val checkedMeatId = binding.rgMeat.checkedRadioButtonId
+            val checkedMeat = findViewById<RadioButton>(checkedMeatId)
+            val cheese = binding.cbCheese.isChecked
+            val onions = binding.cbOnions.isChecked
+            val salad = binding.cbSalad.isChecked
+            val orderString = "Ai comandat un burger de ${checkedMeat.text}" +
+                    (if(cheese) "\nBranza" else "") +
+                    (if(onions) "\nCeapa" else "") +
+                    (if(salad) "\nSalata" else "")
+            binding.tvOrder.setText(orderString)
+        }
 
     }
 }
