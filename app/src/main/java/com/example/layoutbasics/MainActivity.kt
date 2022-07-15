@@ -43,5 +43,10 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        binding.btnToast.setOnClickListener {
+            val intent = Intent(this, ToastActiviy::class.java)
+            startActivity(intent)
+        }
+
     }
 }

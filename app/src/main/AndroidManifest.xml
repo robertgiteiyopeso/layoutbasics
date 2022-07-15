@@ -38,6 +38,10 @@
             android:name=".CheckBoxActivity"
             android:parentActivityName=".MainActivity">
         </activity>
+        <activity
+            android:name=".ToastActiviy"
+            android:parentActivityName=".MainActivity">
+        </activity>
     </application>
 
 </manifest>

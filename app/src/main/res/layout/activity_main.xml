@@ -73,9 +73,19 @@
         android:text="@string/edittext"
         android:textAllCaps="false"
         app:layout_constraintBottom_toTopOf="@id/btnCheck"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btnToast"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/btnTextView" />
+    <Button
+        android:id="@+id/btnToast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/toast"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toTopOf="@id/btnCheck"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnEditText" />
 
     <Button
         android:id="@+id/btnTextView"
