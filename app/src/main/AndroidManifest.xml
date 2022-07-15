@@ -26,6 +26,10 @@
             android:name=".TextViewActivity"
             android:parentActivityName=".MainActivity">
         </activity>
+        <activity
+            android:name=".EditTextActivity"
+            android:parentActivityName=".MainActivity">
+        </activity>
     </application>
 
 </manifest>

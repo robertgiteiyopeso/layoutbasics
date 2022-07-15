@@ -28,5 +28,10 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        binding.btnEditText.setOnClickListener {
+            val intent = Intent(this, EditTextActivity::class.java)
+            startActivity(intent)
+        }
+
     }
 }

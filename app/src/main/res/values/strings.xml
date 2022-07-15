@@ -6,4 +6,5 @@
     <string name="country">Country</string>
     <string name="apply">Apply</string>
     <string name="textview">textView</string>
+    <string name="edittext">EditText</string>
 </resources>
