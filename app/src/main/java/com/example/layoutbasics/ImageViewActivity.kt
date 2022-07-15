@@ -13,6 +13,9 @@ class ImageViewActivity : AppCompatActivity(){
         binding = ActivityImageViewBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        binding.btnAddImage.setOnClickListener {
+            binding.ivImage.setImageResource(R.drawable.pika2)
+        }
 
     }
 }
