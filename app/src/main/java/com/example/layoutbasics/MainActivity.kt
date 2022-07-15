@@ -33,5 +33,10 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        binding.btnImageView.setOnClickListener {
+            val intent = Intent(this, ImageViewActivity::class.java)
+            startActivity(intent)
+        }
+
     }
 }

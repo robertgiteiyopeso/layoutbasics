@@ -7,4 +7,5 @@
     <string name="apply">Apply</string>
     <string name="textview">textView</string>
     <string name="edittext">EditText</string>
+    <string name="imageview">ImageView</string>
 </resources>

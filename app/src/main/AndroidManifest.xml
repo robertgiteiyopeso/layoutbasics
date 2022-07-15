@@ -30,6 +30,10 @@
             android:name=".EditTextActivity"
             android:parentActivityName=".MainActivity">
         </activity>
+        <activity
+            android:name=".ImageViewActivity"
+            android:parentActivityName=".MainActivity">
+        </activity>
     </application>
 
 </manifest>

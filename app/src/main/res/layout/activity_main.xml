@@ -67,6 +67,17 @@
         app:layout_constraintTop_toBottomOf="@+id/etBirthDate" />
 
     <Button
+        android:id="@+id/btnEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/edittext"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnImageView"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnTextView" />
+
+    <Button
         android:id="@+id/btnTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -78,13 +89,13 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/btnEditText"
+        android:id="@+id/btnImageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/edittext"
+        android:text="@string/imageview"
         android:textAllCaps="false"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/btnTextView" />
+        app:layout_constraintStart_toEndOf="@+id/btnEditText" />
 </androidx.constraintlayout.widget.ConstraintLayout>
