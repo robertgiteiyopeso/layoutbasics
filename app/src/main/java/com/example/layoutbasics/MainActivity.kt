@@ -1,5 +1,6 @@
 package com.example.layoutbasics
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -21,5 +22,11 @@ class MainActivity : AppCompatActivity() {
             val country = binding.etCountry.text
             Log.d("MainActivity", "$firstName $lastName born on $birthDate, from $country")
         }
+
+        binding.btnTextView.setOnClickListener {
+            val intent = Intent(this, TextViewActivity::class.java)
+            startActivity(intent)
+        }
+
     }
 }
