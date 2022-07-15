@@ -12,5 +12,12 @@ class EditTextActivity :AppCompatActivity(){
         super.onCreate(savedInstanceState)
         binding = ActivityEditTextBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        binding.btnAdd.setOnClickListener {
+            val firstNr = binding.etFirstNr.text.toString().toInt()
+            val secondNr = binding.etSecondNr.text.toString().toInt()
+            val result = firstNr + secondNr
+            binding.tvResult.setText(result.toString())
+        }
     }
 }
