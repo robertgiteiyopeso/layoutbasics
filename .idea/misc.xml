@@ -10,6 +10,7 @@
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_text_view.xml" value="0.2733352661132813" />
         <entry key="app/src/main/res/layout/activity_toast.xml" value="0.13677811550151975" />
+        <entry key="app/src/main/res/layout/custom_toast.xml" value="0.13728470111448834" />
       </map>
     </option>
   </component>
