@@ -4,7 +4,7 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.example.layoutbasics.databinding.ActivityImageViewBinding
 
-class ImageViewActivity : AppCompatActivity(){
+class ImageViewActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityImageViewBinding
 
@@ -13,8 +13,17 @@ class ImageViewActivity : AppCompatActivity(){
         binding = ActivityImageViewBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        var isImage = false
+
         binding.btnAddImage.setOnClickListener {
-            binding.ivImage.setImageResource(R.drawable.pika2)
+            if (isImage) {
+                binding.ivImage.setImageResource(android.R.color.transparent)
+                isImage = false
+            } else {
+                binding.ivImage.setImageResource(R.drawable.pika2)
+                isImage = true
+            }
+
         }
 
     }
